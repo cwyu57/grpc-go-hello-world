@@ -24,6 +24,14 @@ Install Go Plugins for protocol compiler
   export PATH="$PATH:$(go env GOPATH)/bin"
   ```
 
+Compile proto files
+
+  ``` bash
+  protoc --go_out=. --go_opt=paths=source_relative \
+    --go-grpc_out=. --go-grpc_opt=paths=source_relative \
+    hello-world/hello-world.proto
+  ```
+
 Run the Server
 
   ``` bash
