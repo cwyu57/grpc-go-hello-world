@@ -30,7 +30,7 @@ Run the Server
   go run server/main.go
   ```
 
-Run the Clinet with BloomRPC
+Run the Client with BloomRPC
 
   ``` bash
   brew install --cask bloomrpc
