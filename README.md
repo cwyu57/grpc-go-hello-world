@@ -38,6 +38,12 @@ Run the Server
   go run server/main.go
   ```
 
+Run the Client
+
+  ``` bash
+  go run client/main.go
+  ```
+
 Run the Client with BloomRPC
 
   ``` bash
