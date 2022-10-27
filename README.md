@@ -52,9 +52,21 @@ Run the Client with BloomRPC
 
   ![BloomRPC](./assets/BloomRPC.png)
 
+Generate Unit Test 
+
+  ![Generate Test](./assets/Generate-Test.png)
+  ![Run Test](./assets/Run-Test.png)
+
+  ``` bash
+  go test -coverprofile cover.out ./...
+  go tool cover -html=cover.out -o cover.html
+  open cover.html
+  ```
+
 Reference:
   - [What is gRPC?](https://grpc.io/docs/what-is-grpc/)
   - [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview)
   - [Protocol Buffer Compiler Installation](https://grpc.io/docs/protoc-installation/)
   - [gRPC Go Quick Start](https://grpc.io/docs/languages/go/quickstart/)
   - [grpc 101 with go](https://engineering.teknasyon.com/grpc-101-with-go-6266d9dfdee2)
+  - [gotests](https://github.com/cweill/gotests)
